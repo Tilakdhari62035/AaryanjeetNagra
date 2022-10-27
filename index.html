@@ -137,7 +137,7 @@
          <div class="col-md-6"> <!-- skill item --> 
           <div class="skill-item"> 
            <div class="skill-info clearfix"> 
-            <h4 class="float-left mb-3 mt-0">Teaching & Assisting Skill</h4> <span class="float-right">100%</span> 
+            <h4 class="float-left mb-3 mt-0">Teaching &amp; Assisting Skill</h4> <span class="float-right">100%</span> 
            </div> 
            <div class="progress"> 
             <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95" data-color="#FFD15C" style="background-color: #fbb034; background-image: linear-gradient(315deg, #ff9900 0%, #ffee20 74%);"> 
@@ -218,7 +218,7 @@
        <div class="service-box rounded data-background padding-30 text-center text-light shadow-pink" data-color="#F97B8B"> 
         <img src="images/studyp.svg" width="85px" alt="Teaching Performance"> 
         <h3 class="mb-3 mt-0" style="color: #010101;">Teaching Performance</h3> 
-        <p class="mb-0" style="color: #010101;">I am an Assistant Professor & Life Coach in SVIET, Chandigarh. </p> 
+        <p class="mb-0" style="color: #010101;">I am an Assistant Professor &amp; Life Coach in SVIET, Chandigarh. </p> 
        </div> 
        <div class="spacer d-md-none d-lg-none" data-height="30"></div> 
       </div> 
@@ -484,6 +484,22 @@
    </div> 
    <div class="spacer" data-height="96"></div> 
    <footer class="footer"> 
+ <body> 
+  <p>Visitors Count</p> 
+  <h1 id="count">0</h1> 
+  <script>
+      const countEl = document.getElementById("count");
+      countvisits();
+
+      function countvisits() {
+        fetch('https://api.countapi.xyz/update/aaryanjitnagra.in/viewcount/?amount=1')
+          .then((res) => res.json())
+          .then((res) => {
+            countEl.innerHTML = res.value;
+          });
+      }
+    </script> 
+ </body>
     <div class="container"> <span class="copyright">© 2022 AaryanJeetSingh Nagra.</span> 
     </div> 
    </footer> 
